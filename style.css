@@ -62,20 +62,25 @@ header {
     grid-area: banner;
     text-align: center;
 }
-.container {
+body {
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(space.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.8fr 0.8fr 0.8fr 0.8 0.5fr;
-    grid-template-areas:
-    "banner banner"
-    "pythonjsicon js"
-    "pythoncontent webicon"
-    "conteudoweb ingles"
-    " footer footer"
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+@media only screen and (min-width: 720px){
+    .container {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.8fr 0.8fr 0.8fr 0.8 0.5fr;
+        grid-template-areas:
+        "banner banner"
+        "pythonjsicon js"
+        "pythoncontent webicon"
+        "conteudoweb ingles"
+        " footer footer"
+    }
 }
 .container a {
     text-decoration: none;
