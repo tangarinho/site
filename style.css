@@ -171,3 +171,19 @@ footer h2 {
     10px 10px 10px blue;
     transition: 0.3s;
 }
+@media only screen and (max-width: 790px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+    "banner"
+    "pythonjsicon"
+    "js"
+    "pythoncontent"
+    "webicon"
+    "conteudoweb"
+    "ingles"
+    "footer";
+    }
+}
