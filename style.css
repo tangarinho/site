@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
     color: white;
 }
 /*elementos simples*/
 h1 {
-    font-size: 3em;
-    font-weight: 600;
-    font-family: 'Libre Baskerville', serif;
-}
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;}
 p {
-    font-family: 'Roboto', consolas, monospace;
+    font-family: 'poppins';
     padding: 0.2em;
+    font-weight: 400;
+}
+header p {
+    font-weight: 300;
 }
 h2 {
     font-size: 2em;
@@ -60,16 +63,16 @@ svg {
     margin: 1em 2em;
 }
 
-
-
 /*elementos container*/
 header {
-    
     height: 50vh;
     width: 100%;  
     color: white;
     grid-area: banner;
+    display: flex;
     text-align: center;
+    flex-flow: column;
+    justify-content: center;
 }
 body {
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(space2.jpg);
@@ -186,7 +189,7 @@ footer h2 {
     .navbar label { 
         display: inline-block; 
         color: white;
-        background: yellow;
+        background: #2d365867;
         font-style: normal;
         font-size: 1.2em;
         padding: 0.9em;
