@@ -141,7 +141,7 @@ footer nav {
     display: flex;
     flex-flow: column;
 }
-footer a, footer p {
+footer a{
     margin: 0.5em;
     font-family: sans-serif;
 }
